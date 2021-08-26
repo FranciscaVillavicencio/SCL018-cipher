@@ -7,8 +7,39 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1> Cifrado César </h1>
     </div>
+
+    <div id='context'>
+
+      <h3> Contexto </h3>
+      <p> Acá se explica el código César y su historia </p>
+
+    </div>
+
+    <div id='reference'>
+      <h3> Para profundizar </h3>
+      <p> Para más información te invitamos a ver el siguiente vídeo </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/sMOZf4GN3oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id='video'></iframe>
+    </div>
+
+  <div id ='codigo'>
+ <h3> Quiero probar </h3>
+<p> Ahora puedes crear tus propios mensajes secretos o descifrar los mensajes de tus compañeres </p>
+
+<input type="text" id= 'mensaje1' size="100" maxlength="100"/>
+
+<input type="text" id='offset'/> Escoge tu clave
+
+// conviene utilizar input o button //
+
+<input type="button" id='codificar'/> Codificar 
+<input type="button" id='decodificar'/> Decodificar
+
+<input type="text" id= 'mensaje2' size="100" maxlength="100"/>
+
+  </div>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
