@@ -17,23 +17,23 @@
 
 
   <!-- Sección con información y referencias-->
-  <section>
-    <main id='context'>
+ <section>
+    <div id='context'>
 
       <h3> Contexto </h3>
       <p> Acá se explica el código César y su historia En criptografía, el cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
 
         El cifrado César muchas veces puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13. Como todos los cifrados de sustitución alfabética simple, el cifrado César se descifra con facilidad y en la práctica no ofrece mucha seguridad en la comunicación. </p>
       
-</main>
+      </div>
   
-<aside id= 'reference'>
+<div id= 'reference'>
       <h3> Para profundizar </h3>
       <p> Para más información te invitamos a ver el siguiente vídeo </p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/sMOZf4GN3oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id='video'></iframe>
 
-</aside>
-  </section>
+</div>
+</section>
 
   <!-- Acá comienza la parte del código, hay que ordenarla :S -->
  
@@ -45,7 +45,7 @@
 <!-- Cuadro mensaje 2: acá hay que ajustar el tamaño a los input y ver el html semántico-->
 <section id= 'codigo'>
 <div>
-<input type="text" id= 'mensaje1' size="70" placeholder="Escribe tu mensaje acá"/>
+<input type="text" id= 'mensaje1' placeholder="Escribe tu mensaje acá"/>
 </div>
 
 
@@ -58,9 +58,14 @@
 <!-- Cuadro Mensaje 2 -->
 
 <div>
-<input type="text" id= 'mensaje2' size="70"/>
+<input type="text" id= 'mensaje2' />
 </div>
 </section>
+
+<footer>
+  <br>
+  <p> muchas gracias ¿pongamos una imagen? </p>
+</footer>
 
     <script src="index.js" type="module"></script>
   </body>
