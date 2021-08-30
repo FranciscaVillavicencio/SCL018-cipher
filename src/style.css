@@ -1,26 +1,42 @@
-#context {
-    display: inline-block;
 
-    /* hay que revisar los margenes para que quede centrado :O */
-}
-
-#codigo {
-    padding: 20px;
-    width: 100px;
-    display: inline-block;
-}
 
 #title {
     font-family: fantasy;
     color:coral;
 }
 
-#reference {
-    display: inline-block;
+.image1 {
+    max-width: 80%;
 }
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+
+#reference {
+    width: min-content;
+    height: min-content;
+}
+
+
+body {
+    margin:40px;
+}
+
+
+.codigo {
+    display: flex;
+    flex-direction: row;
+}
+
 
 #botones {
     padding: 10px;
-    width: 175px;
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
+/* falta: ver los margenes, padding, colores, fuentes, tamaño de las letras, tamaños de los objetos */
