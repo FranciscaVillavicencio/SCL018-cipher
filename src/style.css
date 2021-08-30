@@ -5,17 +5,38 @@
     color:coral;
 }
 
+.image1 {
+    max-width: 80%;
+}
 
-section div{
-    padding: 10px;
-    display: inline-block;
+.contenido {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+
+#reference {
+    width: min-content;
+    height: min-content;
 }
 
 
 body {
-    margin: 50px;
+    margin:40px;
 }
 
-#botones {
+
+.codigo {
     display: flex;
+    flex-direction: row;
 }
+
+
+#botones {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* falta: ver los margenes, padding, colores, fuentes, tamaño de las letras, tamaños de los objetos */

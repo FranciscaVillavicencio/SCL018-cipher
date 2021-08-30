@@ -11,19 +11,33 @@
     <!-- Título: acá podemos insertar la imagen del logo y titulo-->
     <header> <!-- encabezado html semántico-->
     <div id="root">
-      <h1 id= 'title'> Cifrado César </h1>
+      <h1 id= 'title'> Cifrado César </h1> <!-- Acá hay que insertar imagen como encabezado-->
     </div>
   </header>
 
 
   <!-- Sección con información y referencias-->
- <section>
+ <section class="contenido">
     <div id='context'>
 
       <h3> Contexto </h3>
-      <p> Acá se explica el código César y su historia En criptografía, el cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
+      <p> Cifrar significa codificar. El <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank"> cifrado César </a> es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla. <br>
+        El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+        </p>
+      
+        <p>
+        <img src="recursos/image1.png" class="image1"> </p>
 
-        El cifrado César muchas veces puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13. Como todos los cifrados de sustitución alfabética simple, el cifrado César se descifra con facilidad y en la práctica no ofrece mucha seguridad en la comunicación. </p>
+        <p>
+        Por ejemplo, si usamos un desplazamiento (offset) de 3 posiciones:
+        
+        <li> La letra A se cifra como D. </li>
+        <li> La palabra CASA se cifra como FDVD. </li>
+        <li> Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </li>
+        <li> Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C </li>
+        </p>
+
+        <p>En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13. </p>
       
       </div>
   
@@ -39,32 +53,34 @@
  
   <div>
  <h3> Quiero probar </h3>
-<p> Ahora puedes crear tus propios mensajes secretos o descifrar los mensajes de tus compañeres </p>
+<p> Ahora puedes crear tus propios mensajes secretos o descifrar los mensajes de tus compañeres. </p>
   </div>
 
 <!-- Cuadro mensaje 2: acá hay que ajustar el tamaño a los input y ver el html semántico-->
-<section id= 'codigo'>
-<div>
+<section class="codigo">
+<div id='input1'>
 <input type="text" id= 'mensaje1' placeholder="Escribe tu mensaje acá"/>
 </div>
 
 
 <!-- Sección botones conviene utilizar input o button?? -->
 <div id='botones'> 
-<input type="text" id='offset' style="width: 3em;"> Escoge tu clave
-<input type="button" id='codificar'/> Codificar 
-<input type="button" id='decodificar'/> Decodificar
+<input type="text" id='offset' style="width: 3em"> Escoge tu clave
+<input type="button" id='codificar' style="width: 3em"/> Codificar 
+<input type="button" id='decodificar' style="width: 3em"/> Decodificar
 </div>
+
+
 <!-- Cuadro Mensaje 2 -->
 
-<div>
+<div id='input2'>
 <input type="text" id= 'mensaje2' />
 </div>
 </section>
 
-<footer>
-  <br>
-  <p> muchas gracias ¿pongamos una imagen? </p>
+<footer id='final'>
+  
+  <p> Muchas gracias ¿pongamos una imagen? </p> <!-- Acá podemos agregar como links de ayuda-->
 </footer>
 
     <script src="index.js" type="module"></script>
