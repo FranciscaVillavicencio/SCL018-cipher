@@ -1,36 +1,51 @@
-
-
-#title {
-    font-family: fantasy;
-    color:coral;
+body {
+    background-image: url(recursos/fondo.jpg);
+    background-size: contain;
+    background-attachment:scroll;
+    margin: 60px;
 }
 
-.image1 {
-    max-width: 80%;
+#title {
+   text-align: center;
+   background-color: rgba(26, 87, 119, 1);
+   margin: 0;
+   padding:10px;
 }
 
 .contenido {
     display: flex;
     flex-direction: row;
-    padding-right: 30px;
+    align-content: space-between;
+    height: 40%;
+    padding-top: 2%;
+}
+
+#context {
+    width: 55%;
+    padding-right: 20px;
 }
 
 #reference {
-    width: min-content;
-    height: min-content;
+    width: 45%;
 }
 
-
-body {
-    margin:40px;
+#video {
+    width: 90%;
 }
 
+#secondpart {
+  padding-top: 10%;
+}
 
 .codigo {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
+#input1, #input2 {
+    width: 50%;
+}
 
 #botones {
     padding: 10px;
@@ -39,4 +54,19 @@ body {
     flex-direction: column;
 }
 
+#mensaje1, #mensaje2 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.boton {
+    background-color: transparent;
+    border: none;
+}
+
+.imagenboton {
+    padding: 10px;
+    width: 50%;
+}
 /* falta: ver los margenes, padding, colores, fuentes, tamaño de las letras, tamaños de los objetos */

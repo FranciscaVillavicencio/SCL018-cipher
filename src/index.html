@@ -11,7 +11,7 @@
     <!-- Título: acá podemos insertar la imagen del logo y titulo-->
     <header> <!-- encabezado html semántico-->
     <div id="root">
-      <h1 id= 'title'> Cifrado César </h1> <!-- Acá hay que insertar imagen como encabezado-->
+      <h1 id= 'title'> <img src="recursos/titulo.png" alt="Título cifrado cesar"> </h1> <!-- Acá hay que insertar imagen como encabezado-->
     </div>
   </header>
 
@@ -20,30 +20,18 @@
  <section class="contenido">
     <div id='context'>
 
-      <h3> Contexto </h3>
+      <h1> Origen del cifrado César </h1>
       <p> Cifrar significa codificar. El <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank"> cifrado César </a> es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla. <br>
         El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
         </p>
       
-        <p>
-        <img src="recursos/image1.png" class="image1"> </p>
-
-        <p>
-        Por ejemplo, si usamos un desplazamiento (offset) de 3 posiciones:
-        
-        <li> La letra A se cifra como D. </li>
-        <li> La palabra CASA se cifra como FDVD. </li>
-        <li> Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </li>
-        <li> Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C </li>
-        </p>
-
         <p>En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13. </p>
       
       </div>
   
 <div id= 'reference'>
-      <h3> Para profundizar </h3>
-      <p> Para más información te invitamos a ver el siguiente vídeo </p>
+      <h1> Para profundizar </h1>
+      <p> Para más información te invitamos a ver el siguiente vídeo. </p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/sMOZf4GN3oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id='video'></iframe>
 
 </div>
@@ -51,12 +39,17 @@
 
   <!-- Acá comienza la parte del código, hay que ordenarla :S -->
  
+  <section id='secondpart'>
   <div>
- <h3> Quiero probar </h3>
+ <h1> Quiero probar </h1>
 <p> Ahora puedes crear tus propios mensajes secretos o descifrar los mensajes de tus compañeres. </p>
   </div>
 
-<!-- Cuadro mensaje 2: acá hay que ajustar el tamaño a los input y ver el html semántico-->
+  <div id='clave'>
+   <p> Ingresa tu clave secreta <input type="text" id='offset' style="width: 3em"> </p> 
+  </div>
+
+<!-- Cuadro mensaje 1: acá hay que ajustar el tamaño a los input y ver el html semántico-->
 <section class="codigo">
 <div id='input1'>
 <input type="text" id= 'mensaje1' placeholder="Escribe tu mensaje acá"/>
@@ -65,9 +58,12 @@
 
 <!-- Sección botones conviene utilizar input o button?? -->
 <div id='botones'> 
-<input type="text" id='offset' style="width: 3em"> Escoge tu clave
-<input type="button" id='codificar' style="width: 3em"/> Codificar 
-<input type="button" id='decodificar' style="width: 3em"/> Decodificar
+<button id='codificar' class='boton' onclick="alert('hola pirinola')"> <img src="recursos/boton 1.png" class='imagenboton'> </button>
+<button id='decodificar' class='boton'> <img src="recursos/boton 2.png" class="imagenboton"></button>
+<button id='limpiar' class='boton'> <img src="recursos/boton 3.png" class="imagenboton"> </button>
+
+
+
 </div>
 
 
@@ -78,9 +74,11 @@
 </div>
 </section>
 
+</section>
+
 <footer id='final'>
   
-  <p> Muchas gracias ¿pongamos una imagen? </p> <!-- Acá podemos agregar como links de ayuda-->
+ <center> <p> Muchas gracias  </p> </center>  <!-- Acá podemos agregar como links de ayuda-->
 </footer>
 
     <script src="index.js" type="module"></script>
