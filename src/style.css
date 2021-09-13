@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap'); /*cambiar fuente*/
 
 
 body {
@@ -25,10 +25,14 @@ body {
     flex-direction:row;
     justify-content: center;
     padding-top: 45px;
-    padding-bottom: 50px;   
+    padding-bottom: 220px;   
     color:  rgba(26, 87, 119, 1);
     font-family: 'Hina Mincho', serif;
     font-size: 20px; 
+}
+
+.contenido h1 {
+    font-size: 35px;
 }
 
 #context {
@@ -48,10 +52,19 @@ body {
 
 #secondpart {
   line-height: 15px;
-  padding-top: 18%;
   color: white;
   font-family: 'Hina Mincho', serif;
-    font-size: 20px; 
+  font-size: 22px; 
+}
+
+#secondpart h1 {
+    background-color: rgba(255, 196, 97, 1);
+    color:  rgba(26, 87, 119, 1);
+    padding: 1.5%;
+}
+
+#clave {
+    padding-top: 1%;
 }
 
 .codigo {
@@ -62,6 +75,10 @@ body {
 
 #input1, #input2 {
     width: 50%;
+}
+
+#offset {
+    border-color: rgba(255, 196, 97, 1);
 }
 
 #botones {
@@ -76,6 +93,7 @@ body {
     height: 100%;
     font-family: 'Hina Mincho', serif;
     font-size: 20px; 
+    border-color: rgba(255, 196, 97, 1);
 }
 
 
@@ -90,6 +108,6 @@ body {
 }
 
 footer {
-    padding: 50px;
+    padding: 20px;
 }
 /* falta: ver los margenes, padding, colores, fuentes, tamaño de las letras, tamaños de los objetos */

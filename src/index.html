@@ -10,15 +10,16 @@
 
     <!-- Título: acá podemos insertar la imagen del logo y titulo-->
     <header> <!-- encabezado html semántico-->
-    <div id="root">
-      <h1 id= 'title'> <img src="recursos/titulo.png" alt="Título cifrado cesar" class='logo'> </h1> <!-- Acá hay que insertar imagen como encabezado-->
+    <div id="root">      
+      <h1 id= "title"> <img src="recursos/titulo.png" alt="Título cifrado cesar" class="logo"> </h1> <!-- Acá hay que insertar imagen como encabezado-->
     </div>
+  
   </header>
 
 
   <!-- Sección con información y referencias-->
  <section class="contenido">
-    <article id='context'>
+    <article id="context">
 
       <h1> Origen del cifrado César </h1>
       <p> Cifrar significa codificar. El <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank"> cifrado César </a> es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla. <br>
@@ -30,10 +31,10 @@
     </article>
 
   
-<aside id= 'reference'>
+<aside id= "reference">
       <h1> Para profundizar </h1>
       <p> Para más información te invitamos a ver el siguiente vídeo. </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/sMOZf4GN3oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id='video'></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/sMOZf4GN3oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
 
 </aside>
 </section>
@@ -41,43 +42,43 @@
 
   <!-- Acá comienza la parte del código, hay que ordenarla :S -->
  
-  <section id='secondpart'>
+  <section id="secondpart">
   <div>
- <h1> Quiero probar </h1>
-<p> Ahora puedes crear tus propios mensajes secretos o descifrar los mensajes de tus compañeres. </p>
+ <h1> ¡A jugar! </h1>
+<p> Te invitamos a crear tus propios mensajes secretos o descifrar los mensajes de tus compañeres. </p>
   </div>
 
-  <div id='clave'>
-   <p> Ingresa tu clave secreta <input type="number" id='offset' style="width: 3em" class='texto'> </p> 
+  <div id="clave">
+   <p> Ingresa tu clave secreta <input type="number" id="offset" style="width: 4em" class="texto"> </p> 
   </div>
 
 <!-- Cuadro mensaje 1: acá hay que ajustar el tamaño a los input y ver el html semántico-->
 <section class="codigo">
-<div id='input1'>
-<input type="text" id= 'mensaje1' class='texto' placeholder="Escribe tu mensaje acá"/>
+<div id="input1">
+<input type="text" id= "mensaje1" class="texto" placeholder="Escribe tu mensaje acá"/>
 </div>
 
 
 <!-- Sección botones conviene utilizar input o button?? -->
-<div id='botones'> 
-<button id='codificar' class='boton'> <img src="recursos/boton 1.png" class='imagenboton'> </button>
-<button id='decodificar' class='boton'> <img src="recursos/boton 2.png" class="imagenboton"></button>
-<button id="limpiar" class='boton'> <img src="recursos/boton 3.png" class="imagenboton"> </button>
+<div id="botones"> 
+<button id="codificar" class="boton"> <img src="recursos/boton 1.png" class="imagenboton"> </button>
+<button id="decodificar" class="boton"> <img src="recursos/boton 2.png" class="imagenboton"></button>
+<button id="limpiar" class="boton"> <img src="recursos/boton 3.png" class="imagenboton"> </button>
 </div>
 
 
 <!-- Cuadro Mensaje 2 -->
 
-<div id='input2'>
-<input type="text" id= 'mensaje2' class='texto' placeholder="Tu nuevo mensaje aparecerá acá"/>
+<div id="input2">
+<input type="text" id= "mensaje2" class="texto" placeholder="Tu nuevo mensaje aparecerá acá" readonly="readonly"/>
 </div>
 </section>
 
 </section>
 
-<footer id='final'>
+<footer id="final">
 
-  <p> Comparte tu mensaje </p>
+  
 
 </footer>
 
