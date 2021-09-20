@@ -1,15 +1,6 @@
 const cipher = {
 
     encode: function (offset,mensaje1) {
-        try {
-        if (offset === null || offset === 0) {
-            throw TypeError('Debes ingresar una clave válida');
-        }
-    }
-    catch(TypeError) {
-        throw TypeError('Debes ingresar una clave válida');
-    }
-        
         let menReturn =''; 
         for (let i=0; i < mensaje1.length; i++) {
             let numAscii = mensaje1.charCodeAt(i); 
