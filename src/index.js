@@ -1,10 +1,10 @@
 
 import cipher from './cipher.js';
 
-
+/*Texto en Mayúscula
 document.getElementById('mensaje1').addEventListener('keyup', function() {
   this.value = this.value.toUpperCase();
-});
+});*/
 
 
 //botón limpiar
