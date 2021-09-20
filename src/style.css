@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap'); /*cambiar fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500&family=Montserrat&family=Roboto&display=swap');/*cambiar fuente*/
 
 
 body {
     background-image: url(recursos/fondo.jpg);
     background-size: contain;
-    background-attachment:scroll;
+    background-attachment: local;
     margin: 40px;
 }
 
@@ -25,10 +25,10 @@ body {
     flex-direction:row;
     justify-content: center;
     padding-top: 45px;
-    padding-bottom: 220px;   
+    padding-bottom: 360px;   
     color:  rgba(26, 87, 119, 1);
-    font-family: 'Hina Mincho', serif;
-    font-size: 20px; 
+    font-family: 'Kaisei Tokumin', serif,'Montserrat', sans-serif,'Roboto', sans-serif;
+    font-size: 16px; 
 }
 
 .contenido h1 {
@@ -37,8 +37,8 @@ body {
 
 #context {
     width: 55%;
-    padding-right: 30px;
-    padding-left: 40px;
+    padding-right: 45px;
+    padding-left: 30px;
     text-align: justify;
 }
 
@@ -53,14 +53,19 @@ body {
 #secondpart {
   line-height: 15px;
   color: white;
-  font-family: 'Hina Mincho', serif;
-  font-size: 22px; 
+  font-family: 'Kaisei Tokumin', serif,'Montserrat', sans-serif,'Roboto', sans-serif;
+  font-size: 17px; 
 }
 
 #secondpart h1 {
     background-color: rgba(255, 196, 97, 1);
     color:  rgba(26, 87, 119, 1);
     padding: 1.5%;
+}
+
+#offset {
+    width: 5em;
+    height: 2em;
 }
 
 #clave {
@@ -91,9 +96,10 @@ body {
 #mensaje1, #mensaje2 {
     width: 100%;
     height: 100%;
-    font-family: 'Hina Mincho', serif;
-    font-size: 20px; 
+    font-family: 'Kaisei Tokumin', serif,'Montserrat', sans-serif,'Roboto', sans-serif;
+    font-size: 17px; 
     border-color: rgba(255, 196, 97, 1);
+    resize: none;
 }
 
 
@@ -110,4 +116,4 @@ body {
 footer {
     padding: 20px;
 }
-/* falta: ver los margenes, padding, colores, fuentes, tamaño de las letras, tamaños de los objetos */
+
